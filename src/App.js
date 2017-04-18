@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import Blackbuttons from './Components/blackbuttons';
+import Greybuttons from './Components/greybuttons';
+import Pinkbuttons from './Components/pinkbuttons';
 
 class App extends Component {
   render() {
@@ -15,36 +18,34 @@ class App extends Component {
           </div>
           <div className="keys">
             <p>
-              <input type="button" className="button gray" value="mrc" />
-              <input type="button" className="button gray" value="m-" />
-              <input type="button" className="button gray" value="m+" />
-              <input type="button" className="button pink" value="/" />
+              <Greybuttons name="mrc"/>
+              <Greybuttons name="m-"/>
+              <Greybuttons name="m+"/>
+              <Pinkbuttons name="/" />
             </p>
             <p>
-            <input type="button" className="button black" value="7" />
-              <input type="button" className="button black" value="8" />
-                <input type="button" className="button black" value="9" />
-                <input type="button" className="button pink" value="*" />
+              <Blackbuttons name="7" />
+              <Blackbuttons name="8" />
+              <Blackbuttons name="9" />
+              <Pinkbuttons name="*" />
               </p>
               <p>
-                <input type="button" className="button black" value="4" />
-                <input type="button" className="button black" value="5" />
-                  <input type="button" className="button black" value="6" />
-                  <input type="button" className="button pink" value="-" />
+                <Blackbuttons name="4" />
+                <Blackbuttons name="5" />
+                <Blackbuttons name="6" />
+                <Pinkbuttons name="." />
                   </p>
                 <p>
-                  <input type="button" className="button black" value="1" />
-                <input type="button" className="button black" value="2" />
-                  <input type="button" className="button black" value="3" />
-                  <input type="button" className="button pink" value="+" />
-
+                <Blackbuttons name="1" />
+                <Blackbuttons name="2" />
+                <Blackbuttons name="3" />
+                <Pinkbuttons name="+" />
                   </p>
                 <p>
-                  <input type="button" className="button black" value="0" />
-                <input type="button" className="button black" value="." />
-                  <input type="button" className="button black" value="C" />
-                  <input type="button" className="button orange" value="=" />
-
+                <Blackbuttons name="0" />
+                <Blackbuttons name="." />
+                <Blackbuttons name="C" />
+                <Pinkbuttons name="=" />
                   </p>
               </div>
             </div>
